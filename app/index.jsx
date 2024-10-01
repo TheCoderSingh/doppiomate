@@ -1,20 +1,23 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import { Slot, Stack } from "expo-router";
+import { StatusBar } from "expo-status-bar";
+import { Link } from "expo-router";
 
-const RootLayout = () => {
+const App = () => {
   return (
-    <Stack>
-      <Stack.Screen
-        main="index"
-        options={{
-          headerShown: false,
-        }}
-      />
-    </Stack>
+    <View style={styles.container}>
+      <Text>Doppiomate!</Text>
+      <StatusBar style="auto" />
+    </View>
   );
 };
 
-export default RootLayout;
+export default App;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
