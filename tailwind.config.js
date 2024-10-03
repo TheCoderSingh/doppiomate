@@ -8,6 +8,9 @@ module.exports = {
         light: "#F6F7F7",
         dark: "#221A23",
       },
+      fontFamily: {
+        primary: "Gill Sans",
+      },
     },
   },
   plugins: [],
