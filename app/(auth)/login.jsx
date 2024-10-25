@@ -3,6 +3,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { colors, images } from "../../constants";
 import FormField from "../components/FormField";
 import Button from "../components/Button";
+import { router } from "expo-router";
 
 const Login = () => {
   return (
@@ -32,7 +33,7 @@ const Login = () => {
           alignItems: "center",
           paddingVertical: 12,
         }}
-        className={"w-[60%] m-5"}
+        className={"w-[60%] mt-3"}
       >
         <View
           style={{
@@ -59,6 +60,12 @@ const Login = () => {
         </TouchableOpacity>
         <TouchableOpacity className="p-2 rounded-full">
           <Image source={images.facebook} />
+        </TouchableOpacity>
+      </View>
+      <View className="flex flex-row mt-3 mb-7">
+        <Text className="text-lg">Don't have an account? </Text>
+        <TouchableOpacity onPress={() => router.push("/signup")}>
+          <Text className={"text-light text-lg"}>Sign up</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>

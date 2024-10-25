@@ -14,7 +14,7 @@ const FormField = ({ title, placeholder, otherStyles, img }) => {
       />
       <TextInput
         placeholder={placeholder}
-        className="text-dark"
+        className="text-dark h-full w-full"
         placeholderTextColor="#221A23"
       />
     </View>

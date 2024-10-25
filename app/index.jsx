@@ -1,5 +1,4 @@
 import { Image, Text } from "react-native";
-import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { images } from "./../constants";
 import Button from "./components/Button";
