@@ -10,6 +10,7 @@ module.exports = {
       },
       fontFamily: {
         primary: "Gill Sans",
+        heading: "Impact",
       },
     },
   },
