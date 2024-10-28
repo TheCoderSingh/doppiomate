@@ -1,14 +1,9 @@
-import {
-  View,
-  Text,
-  SafeAreaView,
-  Image,
-  TouchableOpacity,
-} from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import FormField from "../components/FormField";
 import Button from "../components/Button";
 import { router } from "expo-router";
 import { images } from "../../constants";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const SignUp = () => {
   return (
@@ -37,6 +32,7 @@ const SignUp = () => {
         title="SIGN UP"
         containerStyles="w-80 mt-7"
         textStyles="text-lg"
+        handlePress={() => router.push("/home")}
       />
       <View
         style={{
